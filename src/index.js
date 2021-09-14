@@ -21,7 +21,8 @@ function component() {
   document.body.appendChild(component());
 
   document.addEventListener('DOMContentLoaded', () => {
-    appdata.loadImages();
+    //appdata.loadImages();
+    statusCheck.loadcomments('item1');
     console.log('finish loading...');
   });
   
