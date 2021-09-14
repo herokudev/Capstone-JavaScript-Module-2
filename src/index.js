@@ -1,11 +1,12 @@
-import _ from 'lodash';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//import '@fortawesome/fontawesome-free/js/fontawesome.js';
+//import '@fortawesome/fontawesome-free/js/solid.js';
+//import '@fortawesome/fontawesome-free/js/regular.js';
+//import '@fortawesome/fontawesome-free/js/brands.js';
+import statusCheck from './modules/status';
+import appdata from './modules/appData';
+import _, { get } from 'lodash';
 import './style.css';
-
-const btnSubmit = document.getElementById("btnSubmit");
-
-btnSubmit.addEventListener('click', () => {
-  console.log("Ask for planet --> TEST OK");
-});
 
 function component() {
     const element = document.createElement('div');
@@ -18,3 +19,9 @@ function component() {
   }
   
   document.body.appendChild(component());
+
+  document.addEventListener('DOMContentLoaded', () => {
+    appdata.loadImages();
+    console.log('finish loading...');
+  });
+  
