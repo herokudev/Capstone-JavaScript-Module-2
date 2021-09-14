@@ -1,11 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My TV Shows web api site</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>Worst TV Shows</title>
 </head>
 <body>
-    <button id="btnSubmit">Submit</button>
+    <header class="page-header position-fixed w-100 d-flex">
+      <div class="d-flex">
+        <div class="page-logo-container d-flex align-items-center justify-content-around me-5">
+          <h1 class="page-logo secundary-fc-color">Worst TV Shows Ever</h1>
+        </div>
+        <nav class="d-flex align-items-center">
+          <a href="#" class="nav-item secundary-fc-color me-4">Unpopular Shows</a>
+          <a href="#" class="nav-item secundary-fc-color me-4">Show Discussion</a>
+          <a href="#" class="nav-item secundary-fc-color">New Worst Shows</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="main-content position-relative">
+      <div class="main-content pt-5 pb-4">
+
+        <div id="show-card-holder" class="row main-content d-flex flex-row flex-wrap mt-5 g-auto row-cols-1 row-cols-sm-2 row-cols-md-3">
+        </div> 
+      </div>
+
+    </main>
+    <footer class="footer d-flex secundary-fc-color">
+        <p class="align-middle">Created by @leonardoeng13 and @herokudev using a template created by @Microverse programming school under CC License</p>
+    </footer>
 </body>
 </html>

@@ -1,7 +1,137 @@
-.hello {
-    color: blue;
-  }
+:root {
+  --primary-bc-color: #f6bd60;
+  --secundary-bc-color: #f7ede2;
+  --secundary-font-color: #84a59d;
+  --modal-bc-color: #84a59d;
+  --modal-bc-info: #f28482;
+  --primary-show-bc-color: #f8d5ee;
+  --primary-show-font-color: #000c06;
+  --button-bc-color: #1b0117;
+  --button-font-color: #fff;
+}
 
-  body {
-    background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--primary-bc-color);
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.secundary-fc-color {
+  color: var(--secundary-font-color);
+}
+
+.page-header {
+  top: 0;
+  left: 0;
+  background-color: var(--secundary-bc-color);
+  z-index: 1;
+  padding: 1rem 1rem 1rem 3vw;
+}
+
+.page-logo-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 80%;
+  border: 2px solid var(--secundary-font-color);
+}
+
+.page-logo {
+  font-size: 12px;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.nav-item {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: var(--secundary-font-color);
+}
+
+.main-content {
+  background-color: var(--primary-bc-color);
+}
+
+.modal-background {
+  background-color: var(--modal-bc-color);
+  width: 100%;
+  height: calc(100vh + 2rem);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.modal-info {
+  width: min-content;
+  background-color: var(--modal-bc-info);
+}
+
+.show-info {
+  min-width: 350px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: 4;
+}
+
+.span {
+  color: transparent;
+}
+
+.thumbnail-image {
+  height: 100%;
+  max-height: 350px;
+}
+
+.footer {
+  background-color: var(--secundary-bc-color);
+  width: 100%;
+  padding: 1rem 1rem 1rem 3vw;
+}
+
+.show-card {
+  background-color: var(--primary-show-bc-color);
+  max-width: 320px;
+  color: var(--secundary-font-color);
+}
+
+.show-title {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-show-font-color);
+}
+
+.show-image {
+  width: 100%;
+}
+
+.button {
+  background-color: var(--button-bc-color);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.75em;
+  border-radius: 5px;
+  color: var(--button-font-color);
 }
