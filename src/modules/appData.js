@@ -1,4 +1,5 @@
 const showList = [];
+const tasksList = document.querySelector('#show-card-holder');
 
 class AppData {
     loadImages = () => {
@@ -11,7 +12,7 @@ class AppData {
 }
 
 function popuplateList(items) {
-    console.log("start ---> " + items.length);    
+    console.log("start ---> " + items.length);        
     items.forEach((item) => {
         let tvShow = { id: '', title: '', rating: '', image: '' };
         tvShow.id = item.id;
@@ -24,7 +25,9 @@ function popuplateList(items) {
             showList.push(tvShow);
         }
     });  
-    
+    const element = document.createElement('img');
+    element.src = showList[0].image;
+    tasksList.appendChild(element);
     console.log(showList);    
 }
 

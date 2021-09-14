@@ -12,7 +12,7 @@ function component() {
     const element = document.createElement('div');
   
     // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = _.join(['Today is tuesday', 'JavaScript'], ' ');
     element.classList.add('hello');
   
     return element;
@@ -21,8 +21,8 @@ function component() {
   document.body.appendChild(component());
 
   document.addEventListener('DOMContentLoaded', () => {
-    //appdata.loadImages();
-    statusCheck.loadcomments('item1');
+    appdata.loadImages();
+    //statusCheck.loadlikes();
     console.log('finish loading...');
   });
   

@@ -61,6 +61,13 @@ h3 {
   color: var(--secundary-font-color);
 }
 
+.images-area {
+  border: #84a59d 3px solid;
+  padding: 10px;
+  margin: 25px;
+  width: 85%;
+}
+
 .main-content {
   background-color: var(--primary-bc-color);
 }
