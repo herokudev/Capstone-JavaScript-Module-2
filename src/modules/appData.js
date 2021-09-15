@@ -6,21 +6,24 @@ export default class UI {
     const data = await response.json();
     return data;
   }
+
   static async getPopularShows(weight) {
     const allShows = await UI.#privateGetShows();
     const popularShows = await allShows.filter((show) => show.weight < weight);
     return popularShows;
   }
+
   static imageListener() {
     const images = document.querySelectorAll('.show-image');
     if (images) {
-        images.forEach((image) => {
-            image.addEventListener('click', () => {
-                Modal.displayModal(image.dataset.showId);
-            });
+      images.forEach((image) => {
+        image.addEventListener('click', () => {
+          Modal.displayModal(image.dataset.showId);
         });
+      });
     }
   }
+
   static commentsListener() {
     const comments = document.querySelectorAll('.comments-btn');
     if (comments) {
@@ -42,13 +45,13 @@ export default class UI {
       });
     }
   }
-  
+
   static async displayShows() {
-      const showCardHolder = document.querySelector('#show-card-holder');
-      showCardHolder.innerHTML = '';
-      const data = await UI.getPopularShows(10);
-      data.forEach((show) => {
-          showCardHolder.innerHTML += `<div class="col">
+    const showCardHolder = document.querySelector('#show-card-holder');
+    showCardHolder.innerHTML = '';
+    const data = await UI.getPopularShows(10);
+    data.forEach((show) => {
+      showCardHolder.innerHTML += `<div class="col">
         <div class="show-card mt-3 mx-auto">
           <div class="show-image-holder">
             <img src=${show.image.medium} class="show-image" data-show-id=${show.id} >
@@ -70,9 +73,9 @@ export default class UI {
           </div>
         </div>
       </div>`;
-      });
-      UI.imageListener();
-      UI.commentsListener();
-      UI.reservationListener();
+    });
+    UI.imageListener();
+    UI.commentsListener();
+    UI.reservationListener();
   }
 }
