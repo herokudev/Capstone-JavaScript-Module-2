@@ -1,35 +1,57 @@
-const showList = [];
-const tasksList = document.querySelector('#show-card-holder');
+import Modal from './status.js';
 
-class AppData {
-    loadImages = () => {
-        fetch('https://api.tvmaze.com/shows', {
-            method: 'GET',
-          })
-            .then((response) => response.json())
-            .then((data) => popuplateList(data));
-      }
-}
+export default class UI {
+    static async #privateGetShows() {
+        const response = await fetch('https://api.tvmaze.com/shows');
+        const data = await response.json();
+        return data;
+    }
 
-function popuplateList(items) {
-    console.log("start ---> " + items.length);        
-    items.forEach((item) => {
-        let tvShow = { id: '', title: '', rating: '', image: '' };
-        tvShow.id = item.id;
-        tvShow.title = item.name;
-        tvShow.rating = item.rating.average;
-        if (item.image !== null) {
-            tvShow.image = item.image.medium;
-        }           
-        if (item.rating.average < 6.5) {
-            showList.push(tvShow);
+    static async getPopularShows(weight) {
+        const allShows = await UI.#privateGetShows();
+        const popularShows = await allShows.filter((show) => show.weight < weight);
+        return popularShows;
+    }
+
+    static imageListener() {
+        const images = document.querySelectorAll('.show-image');
+        if (images) {
+            images.forEach((image) => {
+                image.addEventListener('click', () => {
+                    Modal.displayModal(image.dataset.showId);
+                });
+            });
         }
-    });  
-    const element = document.createElement('img');
-    element.src = showList[0].image;
-    tasksList.appendChild(element);
-    console.log(showList);    
-}
+    }
 
-const appdata = new AppData();
-export { appdata as default };
+    static async displayShows() {
+        const showCardHolder = document.querySelector('#show-card-holder');
+        showCardHolder.innerHTML = '';
+
+        const data = await UI.getPopularShows(10);
+
+        data.forEach((show) => {
+            showCardHolder.innerHTML += `<div class="col">
+          <div class="show-card mt-3 mx-auto">
+            <div class="show-image-holder">
+              <img src=${show.image.medium} class="show-image" data-show-id=${show.id} >
+            </div>
+            <div class="d-flex flex-column p-2">
+              <div class="mb-3">
+                <h3 class="show-title">${show.name}</h3>
+                <span></span>
+              </div>
+              <div class="mb-3 mx-auto">
+                <button class="comments-btn mx-auto p-2 button" data-show-id=${show.id} >Comments</button>
+              </div>
+              <div class="mb-3 mx-auto">
+                <button class="reservation-btn mx-auto p-2 button" data-show-id=${show.id} >Reservation</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+        });
+
+        UI.imageListener();
+    }
+}

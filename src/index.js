@@ -1,28 +1,12 @@
-//import 'bootstrap/dist/css/bootstrap.min.css';
-//import '@fortawesome/fontawesome-free/js/fontawesome.js';
-//import '@fortawesome/fontawesome-free/js/solid.js';
-//import '@fortawesome/fontawesome-free/js/regular.js';
-//import '@fortawesome/fontawesome-free/js/brands.js';
-import statusCheck from './modules/status';
-import appdata from './modules/appData';
 import _, { get } from 'lodash';
 import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import statusCheck from './modules/status';
+import appdata from './modules/appData';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Today is tuesday', 'JavaScript'], ' ');
-    element.classList.add('hello');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+document.addEventListener('DOMContentLoaded', async () => {
+  appdata.displayShows();
+  //appdata.loadImages();
+  //statusCheck.loadlikes();
+});
 
-  document.addEventListener('DOMContentLoaded', () => {
-    appdata.loadImages();
-    //statusCheck.loadlikes();
-    console.log('finish loading...');
-  });
-  

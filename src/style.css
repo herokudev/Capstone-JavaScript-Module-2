@@ -1,12 +1,12 @@
 :root {
-  --primary-bc-color: #f6bd60;
+  --primary-bc-color: #f3d9b1;
   --secundary-bc-color: #f7ede2;
   --secundary-font-color: #84a59d;
   --modal-bc-color: #84a59d;
   --modal-bc-info: #f28482;
-  --primary-show-bc-color: #f8d5ee;
+  --primary-show-bc-color: #a8c256;
   --primary-show-font-color: #000c06;
-  --button-bc-color: #1b0117;
+  --button-bc-color: #c29979;
   --button-font-color: #fff;
 }
 
