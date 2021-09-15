@@ -1,4 +1,4 @@
-import Modal from './status.js';
+import Modal from './status';
 
 export default class UI {
   static async #privateGetShows() {
