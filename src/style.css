@@ -1,12 +1,12 @@
 :root {
-  --primary-bc-color: #f3d9b1;
-  --secundary-bc-color: #f7ede2;
-  --secundary-font-color: #84a59d;
-  --modal-bc-color: #84a59d;
-  --modal-bc-info: #f28482;
-  --primary-show-bc-color: #a8c256;
+  --primary-bc-color: #096b72;;
+  --secundary-bc-color: #7f675b;
+  --secundary-font-color: #ffeaee;
+  --modal-bc-color: #adffff;
+  --modal-bc-info: #08595e;
+  --primary-show-bc-color: #adffff;
   --primary-show-font-color: #000c06;
-  --button-bc-color: #c29979;
+  --button-bc-color: #0075f2;
   --button-font-color: #fff;
 }
 
