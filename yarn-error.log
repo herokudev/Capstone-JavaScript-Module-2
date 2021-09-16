@@ -1,0 +1,78 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\leona\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Python\Python37-32\Scripts\;C:\Python\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\MATLAB\MATLAB Runtime\v97\runtime\win64;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Ruby30-x64\bin;C:\Users\leona\AppData\Local\Microsoft\WindowsApps;C:\Users\leona\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\leona\AppData\Local\atom\bin;C:\Users\leona\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\GitHub CLI\;C:\Users\leona\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\leona\package.json: Unexpected token + in JSON at position 211
+      at JSON.parse (<anonymous>)
+      at C:\Users\leona\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\leona\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\leona\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "webpack-demo",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d dist",
+      "test": "jest",
+      "watch": "jest --watch",
+      "start": "webpack serve --open",
+      "build": "webpack"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/herokudev/Capstone-JavaScript-Module-2.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+      "babel-eslint": "^10.1.0",
+      "css-loader": "^6.2.0",
+      "eslint": "^7.32.0",
+      "eslint-config-airbnb-base": "^14.2.1",
+      "eslint-plugin-import": "^2.24.1",
+      "gh-pages": "^3.2.3",
+      "hint": "^6.1.4",
+      "html-webpack-plugin": "^5.3.2",
+      "jest": "^27.1.0",
+      "style-loader": "^3.2.1",
+      "stylelint": "^13.13.1",
+      "stylelint-config-standard": "^21.0.0",
+      "stylelint-csstree-validator": "^1.9.0",
+      "stylelint-scss": "^3.20.1",
+      "ts-jest": "^27.0.5",
+      "ts-node": "^10.2.1",
+      "webpack": "^5.51.1",
+      "webpack-cli": "^4.8.0",
+      "webpack-dev-server": "^4.0.0"
+    },
+    "dependencies": {
+      "bootstrap": "^5.1.1",
+      "lodash": "^4.17.21",
+      "@jest/globals": "^27.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,75 +1,94 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Js Capstone
 
-> One paragraph statement about the project.
+> In this project I'm practicing how to use RESTful API's. I'm using GET and POST methods to either display shows on the screen or to Display data that's related to the Involvement API that Microverse built for this learning project.
 
-![screenshot](./app_screenshot.png)
+Basic UI of the project:
 
-Additional description about the project and its features.
+![screenshot](print1.png)
+
+UI of the Pop Up:
+![screenshot](print2.png)
+
+Unit test OK:
+![screenshot](print3.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Js
+- Html
+- Css
 
-## Live Demo
+## Project Description (Loom Video)
 
-[Live Demo Link](https://livedemo.com)
+Check out the [video](https://www.loom.com/share/77fb92a9fc2a489182abfb0be7b8f1fd)
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Git/GitHub;
+- Optional ( IDE installed in your machine ) - recommended IDE: Vscode;
+- Node installed locally;
+
 ### Setup
+
+- To clone this repo:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to where you want to paste the Repo folder;
+  - Type `git clone https://github.com/herokudev/Capstone-JavaScript-Module-2.git`;
+  - Open the folder todo-list that was created on your IDE;
 
 ### Install
 
-### Usage
-
+- To install all the dependencies in the package-lock.json:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to be inside the todo-list repo folder;
+  - Run npm install or npm i;
+  
 ### Run tests
+
+- Linters Tests:
+  - Eslint: run `npx eslint .`
+  - Stylelint: run `npx stylelint "**/*.{css,scss}"`
+  - WebHint: run `npx hint --telemetry=off .`
+  - LightHouse: run `lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.`
+- Run a Live Version of the Dist Folder:
+  - Run `npm start`
+- To build the webpack:
+  - Run `npm run build`
 
 ### Deployment
 
-
+The Page is Deployed in the branch gh-pages;
 
 ## Authors
 
-👤 **Author1**
+👤 **Herbert Orellana**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@herokudev](https://github.com/herokudev)
+- Twitter: [@Herbert](https://twitter.com/HerbertOrellan4)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/armando-orellana-a0b50b34/)
 
-👤 **Author2**
+👤 **Leo de Andrade**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@leonardoeng13](https://github.com/leonardoeng13)
+- Twitter: [@Leo de Andrade](https://twitter.com/deandrede_leo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/leonardodeandrade/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/herokudev/Capstone-JavaScript-Module-2/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
