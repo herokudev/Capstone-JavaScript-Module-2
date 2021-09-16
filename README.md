@@ -11,11 +11,18 @@ Basic UI of the project:
 UI of the Pop Up:
 ![screenshot](print2.png)
 
+Unit test OK:
+![screenshot](print3.png)
+
 ## Built With
 
 - Js
 - Html
 - Css
+
+## Project Description (Loom Video)
+
+Check out the [video](https://www.loom.com/share/77fb92a9fc2a489182abfb0be7b8f1fd)
 
 
 ## Getting Started
