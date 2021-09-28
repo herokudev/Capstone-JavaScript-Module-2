@@ -72,7 +72,7 @@ The Page is Deployed in the branch gh-pages;
 
 - GitHub: [@herokudev](https://github.com/herokudev)
 - Twitter: [@Herbert](https://twitter.com/HerbertOrellan4)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/armando-orellana-a0b50b34/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/herbert-armando-orellana-a0b50b34/)
 
 👤 **Leo de Andrade**
 
